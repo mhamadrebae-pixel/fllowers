@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mhamad Rebar | Web Developer / Front-End Developer</title>
+    <meta
+      name="description"
+      content="Personal profile and contact card for Mhamad Rebar, Web Developer / Front-End Developer."
+    />
+    <meta name="theme-color" content="#07111f" id="theme-color-meta" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Mhamad Rebar | Web Developer / Front-End Developer"
+    />
+    <meta
+      property="og:description"
+      content="Personal profile and contact card for Mhamad Rebar."
+    />
+    <meta property="og:image" content="assets/profile.jpg" />
+    <meta property="og:locale" content="ku_IQ" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preload" as="image" href="assets/profile.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <main class="profile-card" aria-labelledby="profile-name">
+        <button
+          class="theme-toggle"
+          type="button"
+          data-theme-toggle
+          aria-label="گۆڕینی ڕووناکی ڕووکار"
+          aria-pressed="false"
+        >
+          <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+          <span class="theme-toggle__text">ڕووناکی</span>
+        </button>
+
+        <section class="profile-hero">
+          <div class="avatar" data-avatar>
+            <div class="avatar__fallback" aria-hidden="true">
+              <span data-avatar-initials>MR</span>
+            </div>
+
+            <!-- Replace assets/profile.jpg with your compressed profile image. -->
+            <img
+              class="avatar__image"
+              src="assets/mhamad.jpg"
+              alt="Profile photo of Mhamad Rebar"
+              width="320"
+              height="320"
+              fetchpriority="high"
+              decoding="async"
+              data-profile-image
+            />
+          </div>
+
+          <div class="profile-copy">
+            <p class="profile-eyebrow">
+              <span class="profile-eyebrow__dot" aria-hidden="true"></span>
+              <span>پڕۆفایلی پیشەیی</span>
+            </p>
+            <!-- Personal data: update name, title, and bio here. -->
+            <h1 class="profile-name" id="profile-name" data-profile-name>
+              Mhamad
+            </h1>
+            <p class="profile-title">Web Developer / Front-End Developer</p>
+            <p class="profile-bio">
+              I build clean, fast, and modern web experiences with a strong
+              focus on front-end quality, usability, and professional design.
+            </p>
+            <div class="profile-highlights" aria-label="Quick profile highlights">
+              <span class="profile-chip">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path
+                    d="M12 21s-6.2-4.7-6.2-10A6.2 6.2 0 1 1 18.2 11c0 5.3-6.2 10-6.2 10Zm0-7.3a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Z"
+                  />
+                </svg>
+                <span>Kurdistan, Iraq</span>
+              </span>
+              <span class="profile-chip">
+                <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                  <path
+                    d="M12 4 4 8l8 4 8-4-8-4Zm0 6.2L4 14l8 4 8-4-8-3.8Zm0 5L6.1 18 12 21l5.9-3L12 15.2Z"
+                  />
+                </svg>
+                <span>Front-End Focus</span>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section class="details" aria-labelledby="details-title">
+          <h2 class="section-title" id="details-title">زانیاری پەیوەندی</h2>
+
+          <!-- Contact data: update phone, email, and location here. -->
+          <dl class="details-grid">
+            <div class="detail-item">
+              <span class="detail-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M7.3 4.5h2.6c.4 0 .7.2.8.6l1 4a1 1 0 0 1-.3 1l-1.7 1.5a14.2 14.2 0 0 0 2.7 2.9 13.1 13.1 0 0 0 2.9 2.1l1.4-1.8a1 1 0 0 1 1-.3l4.1.9c.4.1.6.4.6.8v2.6c0 .5-.4.9-.9 1a8.2 8.2 0 0 1-2 .2c-3.7 0-7.5-1.9-11-5.4C5.1 12 3.2 8.3 3.2 4.7c0-.5 0-1.2.2-1.9.1-.5.5-.8.9-.8Z"
+                  />
+                </svg>
+              </span>
+              <div class="detail-item__content">
+                <dt>مۆبایل</dt>
+                <dd>
+                  <a class="detail-link" href="tel:+9647510485057" dir="ltr">
+                    07510485057
+                  </a>
+                  <button
+                    class="copy-chip"
+                    type="button"
+                    data-copy-phone
+                    data-copy-value="07510485057"
+                    aria-label="کۆپی کردنی ژمارەی مۆبایل"
+                  >
+                    کۆپی
+                  </button>
+                </dd>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M3.5 6.2A2.2 2.2 0 0 1 5.7 4h12.6a2.2 2.2 0 0 1 2.2 2.2v11.6a2.2 2.2 0 0 1-2.2 2.2H5.7a2.2 2.2 0 0 1-2.2-2.2V6.2Zm2 .2 6.2 5 6.3-5H5.5Zm13 2.5-6.1 4.8a1 1 0 0 1-1.2 0L5.5 8.9v8.9c0 .1.1.2.2.2h12.6c.1 0 .2-.1.2-.2V8.9Z"
+                  />
+                </svg>
+              </span>
+              <div class="detail-item__content">
+                <dt>ئیمەیڵ</dt>
+                <dd>
+                  <a
+                    class="detail-link"
+                    href="mailto:mhamadrebae@gmail.com"
+                    dir="ltr"
+                  >
+                    mhamadrebae@gmail.com
+                  </a>
+                </dd>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <span class="detail-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M12 21s-6.2-4.7-6.2-10A6.2 6.2 0 1 1 18.2 11c0 5.3-6.2 10-6.2 10Zm0-7.3a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Z"
+                  />
+                </svg>
+              </span>
+              <div class="detail-item__content">
+                <dt>شوێن</dt>
+                <dd>
+                  <span class="detail-text">Kurdistan, Iraq</span>
+                </dd>
+              </div>
+            </div>
+          </dl>
+        </section>
+
+        <nav class="contact-actions" aria-label="ڕێگاکانی پەیوەندی">
+          <a
+            class="action-button action-button--primary"
+            href="tel:+9647510485057"
+            aria-label="پەیوەندی کردن بە ژمارەی مۆبایل"
+          >
+            <span class="action-button__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="M7.3 4.5h2.6c.4 0 .7.2.8.6l1 4a1 1 0 0 1-.3 1l-1.7 1.5a14.2 14.2 0 0 0 2.7 2.9 13.1 13.1 0 0 0 2.9 2.1l1.4-1.8a1 1 0 0 1 1-.3l4.1.9c.4.1.6.4.6.8v2.6c0 .5-.4.9-.9 1a8.2 8.2 0 0 1-2 .2c-3.7 0-7.5-1.9-11-5.4C5.1 12 3.2 8.3 3.2 4.7c0-.5 0-1.2.2-1.9.1-.5.5-.8.9-.8Z"
+                />
+              </svg>
+            </span>
+            <span>پەیوەندی</span>
+          </a>
+
+          <a
+            class="action-button action-button--whatsapp"
+            href="https://wa.me/9647510485057"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="کردنەوەی پەیوەندی واتسئاپ"
+          >
+            <span class="action-button__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="M12 2.2a9.8 9.8 0 0 0-8.4 14.8L2.3 21.7l4.9-1.3A9.8 9.8 0 1 0 12 2.2Zm0 17.8a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.5-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.5.7c-.1.1-.3.2-.5.1a6.4 6.4 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.4-.2.2-.9.9-.9 2.1 0 1.2.9 2.4 1 2.5 1.7 2.4 3.8 3.5 5 3.9 1.5.5 1.9.4 2.2.4.7-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.5-.3Z"
+                />
+              </svg>
+            </span>
+            <span>WhatsApp</span>
+          </a>
+
+          <a
+            class="action-button action-button--wide"
+            href="mailto:mhamadrebae@gmail.com"
+            aria-label="ناردنی ئیمەیڵ"
+          >
+            <span class="action-button__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path
+                  d="M3.5 6.2A2.2 2.2 0 0 1 5.7 4h12.6a2.2 2.2 0 0 1 2.2 2.2v11.6a2.2 2.2 0 0 1-2.2 2.2H5.7a2.2 2.2 0 0 1-2.2-2.2V6.2Zm2 .2 6.2 5 6.3-5H5.5Zm13 2.5-6.1 4.8a1 1 0 0 1-1.2 0L5.5 8.9v8.9c0 .1.1.2.2.2h12.6c.1 0 .2-.1.2-.2V8.9Z"
+                />
+              </svg>
+            </span>
+            <span>ئیمەیڵ</span>
+          </a>
+        </nav>
+
+        <section class="socials" aria-labelledby="socials-title">
+          <h2 class="section-title" id="socials-title">سۆشیال میدیا</h2>
+
+          <!-- Social links: replace each href with your own profile URL. -->
+          <ul class="social-grid" role="list">
+            <li>
+              <a
+                class="social-link social-link--facebook"
+                href="https://facebook.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook profile, opens in a new tab"
+              >
+                <span class="social-link__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M13.6 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.4v2H7.5V13h2.8v8h3.3Z"
+                    />
+                  </svg>
+                </span>
+                <span class="social-link__body">
+                  <span class="social-link__name">Facebook</span>
+                  <span class="social-link__meta">کردنەوەی پڕۆفایل</span>
+                </span>
+                <span class="social-link__hint" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link social-link--instagram"
+                href="https://instagram.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram profile, opens in a new tab"
+              >
+                <span class="social-link__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <rect x="4" y="4" width="16" height="16" rx="4" />
+                    <circle cx="12" cy="12" r="3.5" fill="none" />
+                    <circle cx="17.3" cy="6.8" r="1.1" />
+                  </svg>
+                </span>
+                <span class="social-link__body">
+                  <span class="social-link__name">Instagram</span>
+                  <span class="social-link__meta">کردنەوەی پڕۆفایل</span>
+                </span>
+                <span class="social-link__hint" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link social-link--tiktok"
+                href="https://www.tiktok.com/@yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok profile, opens in a new tab"
+              >
+                <span class="social-link__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M14.4 4c.4 1.1 1.4 2.2 2.7 2.9.8.4 1.7.6 2.6.6v2.8c-1.2 0-2.5-.3-3.6-.9v5.5a5 5 0 1 1-5-5h.5v2.7h-.5a2.3 2.3 0 1 0 2.3 2.3V4h1Z"
+                    />
+                  </svg>
+                </span>
+                <span class="social-link__body">
+                  <span class="social-link__name">TikTok</span>
+                  <span class="social-link__meta">کردنەوەی پڕۆفایل</span>
+                </span>
+                <span class="social-link__hint" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link social-link--telegram"
+                href="https://t.me/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram profile, opens in a new tab"
+              >
+                <span class="social-link__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M20.7 4.4 3.9 10.9c-1.1.4-1 2 .2 2.3l4.3 1.3 1.6 4.9c.3 1.1 1.7 1.2 2.2.2l2.5-4.1 4.7-10c.4-.9-.4-1.8-1.3-1.4Zm-9.4 10.2-.3 3-1-3.1 7.3-6.6-6 6.7Z"
+                    />
+                  </svg>
+                </span>
+                <span class="social-link__body">
+                  <span class="social-link__name">Telegram</span>
+                  <span class="social-link__meta">کردنەوەی پڕۆفایل</span>
+                </span>
+                <span class="social-link__hint" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link social-link--github"
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile, opens in a new tab"
+              >
+                <span class="social-link__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2.9-.3 1.9-.4 2.9-.4s2 .1 2.9.4c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.3 11.3 0 0 0 12 .7Z"
+                    />
+                  </svg>
+                </span>
+                <span class="social-link__body">
+                  <span class="social-link__name">GitHub</span>
+                  <span class="social-link__meta">کردنەوەی پڕۆفایل</span>
+                </span>
+                <span class="social-link__hint" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link social-link--linkedin"
+                href="https://www.linkedin.com/in/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile, opens in a new tab"
+              >
+                <span class="social-link__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M5 8.8H2V21h3V8.8ZM3.5 7.4a1.8 1.8 0 1 0 0-3.6 1.8 1.8 0 0 0 0 3.6ZM22 13.4c0-3-1.6-4.8-4.3-4.8-2 0-2.8 1.1-3.3 1.9V8.8h-3V21h3v-6.8c0-.4 0-.8.2-1.1.4-.8 1.1-1.6 2.4-1.6 1.7 0 2.4 1.2 2.4 3V21h3v-7.6Z"
+                    />
+                  </svg>
+                </span>
+                <span class="social-link__body">
+                  <span class="social-link__name">LinkedIn</span>
+                  <span class="social-link__meta">کردنەوەی پڕۆفایل</span>
+                </span>
+                <span class="social-link__hint" aria-hidden="true">↗</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link social-link--website"
+                href="https://yourwebsite.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Personal website, opens in a new tab"
+              >
+                <span class="social-link__badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M12 2.5a9.5 9.5 0 1 0 0 19 9.5 9.5 0 0 0 0-19Zm6.8 8.2h-3.2a15.5 15.5 0 0 0-1.4-5 7 7 0 0 1 4.6 5Zm-6.8-5.6c.8 0 2.3 2.2 2.8 5.6H9.2C9.7 7.3 11.2 5.1 12 5.1Zm-2.8 7.9h5.6c-.1 1.6-.4 3.1-.9 4.4-.5 1.2-1.3 2.4-1.9 2.4s-1.4-1.2-1.9-2.4c-.5-1.3-.8-2.8-.9-4.4Zm-4 0h3.2c.2 1.8.6 3.5 1.4 5a7 7 0 0 1-4.6-5Zm0-2.3a7 7 0 0 1 4.6-5 15.5 15.5 0 0 0-1.4 5H5.2Zm9 7.3c.8-1.5 1.2-3.2 1.4-5h3.2a7 7 0 0 1-4.6 5Z"
+                    />
+                  </svg>
+                </span>
+                <span class="social-link__body">
+                  <span class="social-link__name">Website</span>
+                  <span class="social-link__meta">سەردانی وێبسایت</span>
+                </span>
+                <span class="social-link__hint" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <footer class="profile-footer">
+          <p>
+            © <span id="current-year"></span> Mhamad Rebar. Professional
+            profile card.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <div
+      class="toast"
+      id="copy-toast"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      ژمارەکە کۆپی کرا
+    </div>
+  </body>
+</html>
